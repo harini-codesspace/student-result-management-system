@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Result Management System</title>
-
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
@@ -14,55 +13,30 @@
     <p>Manage Student Records, Grades & GPA Efficiently</p>
 </header>
     <div class="container">
-
         <h1>Student Result Management System</h1>
-
-        <!-- Add Student Form -->
         <div class="student-form">
-
             <h2>Add Student</h2>
-
             <input type="text" id="regNo" placeholder="Register Number">
-
             <input type="text" id="studentName" placeholder="Student Name">
-
            <input type="number" id="tamil" placeholder="Tamil Marks">
-
             <input type="number" id="english" placeholder="English Marks">
-
             <input type="number" id="maths" placeholder="Maths Marks">
-
             <input type="number" id="science" placeholder="Science Marks">
-
             <input type="number" id="social" placeholder="Social Marks">
-
             <button onclick="addStudent()">
                 Add Student</button>
         </div>
-
-        <!-- Search Section -->
         <div class="search-section">
-
             <h2>Search Student</h2>
-
             <input type="text" id="searchRegNo" placeholder="Enter Register Number">
-
          <button onclick="searchStudent()">
            Search
          </button>
-
         </div>
-
-        <!-- Result Card -->
         <div class="result-card">
-            <!-- Results Table -->
-
 <div class="results-table">
-
     <h2>Student Records</h2>
-
     <table>
-
         <thead>
             <tr>
                 <th>Reg No</th>
@@ -73,35 +47,22 @@
                 <th>Actions</th>
             </tr>
         </thead>
-
         <tbody id="studentTableBody">
-
         </tbody>
-
     </table>
-
 </div>
-
             <h2>Student Result</h2>
-
             <p>Name: <span id="resultName">-</span></p>
-
             <p>Register No: <span id="resultRegNo">-</span></p>
-
             <p>Total: <span id="resultTotal">-</span></p>
-
             <p>Percentage: <span id="resultPercentage">-</span></p>
-
             <p>Grade: <span id="resultGrade">-</span></p>
-
             <p>GPA: <span id="resultGPA">-</span></p>
             <button onclick="downloadPDF()">
              Download PDF
             </button>
         </div>
-
     </div>
-
     <script src="script.js"></script>
 <footer>
     <p>Developed by Harini</p>
